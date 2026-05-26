@@ -638,15 +638,16 @@ p {
   }
 
   .hero {
-    gap: 28px;
-    padding: 104px 16px 46px;
+    gap: 22px;
+    padding: 96px 16px 38px;
     background-position: center;
   }
 
   .hero h1 {
-    margin-bottom: 18px;
-    font-size: clamp(2.55rem, 14vw, 3.45rem);
-    line-height: 0.98;
+    max-width: 340px;
+    margin-bottom: 16px;
+    font-size: clamp(2.15rem, 11.5vw, 2.85rem);
+    line-height: 1.02;
   }
 
   .hero-pill {
@@ -657,7 +658,8 @@ p {
   }
 
   .hero-text {
-    font-size: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
   }
 
   .hero-actions {
@@ -681,8 +683,9 @@ p {
   }
 
   .flow-ui {
-    min-height: 380px;
-    padding: 18px;
+    min-height: auto;
+    gap: 12px;
+    padding: 14px;
   }
 
   .flow-topbar,
@@ -695,14 +698,27 @@ p {
     align-items: flex-start;
     border-radius: 14px;
     flex-direction: column;
+    gap: 6px;
+    padding: 12px;
+    font-size: 0.78rem;
   }
 
   .flow-node {
-    padding: 18px;
+    padding: 14px;
   }
 
   .flow-node strong {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
+  }
+
+  .flow-node p {
+    font-size: 0.9rem;
+  }
+
+  .flow-options span,
+  .flow-grid div {
+    padding: 12px;
+    font-size: 0.9rem;
   }
 
   .panel-card {
@@ -710,10 +726,15 @@ p {
     grid-template-columns: 1fr;
     gap: 8px;
     margin: 12px;
+    padding: 14px;
   }
 
   .panel-card strong {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+
+  .panel-card span {
+    font-size: 0.92rem;
   }
 
   .trust-strip,
@@ -733,7 +754,7 @@ p {
   .difference-section,
   .faq-section,
   .final-cta {
-    padding: 54px 16px;
+    padding: 46px 16px;
   }
 
   .section-heading h2,
@@ -741,37 +762,55 @@ p {
   .difference-section h2,
   .faq-section h2,
   .final-cta h2 {
-    font-size: clamp(2.25rem, 11vw, 3.1rem);
-    line-height: 1;
+    font-size: clamp(2rem, 9.5vw, 2.55rem);
+    line-height: 1.04;
   }
 
   .flow-icon {
-    min-height: 160px;
+    min-height: 128px;
+    font-size: 3.4rem;
   }
 
   .service-grid h3 {
     min-height: auto;
+    font-size: 1.35rem;
   }
 
   .steps-grid article,
   .difference-grid article {
-    min-height: 210px;
-    padding: 20px;
+    min-height: auto;
+    padding: 18px;
   }
 
   .screen-card {
-    margin: 18px 18px 0;
-    padding: 22px;
+    margin: 14px 14px 0;
+    padding: 18px;
+  }
+
+  .screen-card h3 {
+    font-size: 1.45rem;
+  }
+
+  .doctor-card div {
+    padding: 18px;
+  }
+
+  .faq-list details {
+    padding: 16px;
+  }
+
+  .faq-list summary {
+    font-size: 1rem;
   }
 
   .final-cta {
-    min-height: 440px;
+    min-height: 380px;
   }
 }
 
 @media (max-width: 380px) {
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.05rem;
   }
 
   .panel-card strong {
